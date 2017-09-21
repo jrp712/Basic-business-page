@@ -219,6 +219,22 @@ p {
 /**************/
 /* WORKS ******/
 /**************/
+#message {
+	background-color: #efefef;
+	text-align: center;
+	font-size: 18px;
+	color: #a3a6ab;
+}
+
+#message i {
+	margin-bottom: 10px;
+}
+
+blockquote {
+	width: 60%;
+	margin: 0 auto;
+}
+
 
 
 
