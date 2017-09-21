@@ -1,0 +1,52 @@
+body, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 96%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+header {
+	padding: 20px 0;
+	background-color: #e5e5e5;
+	color: #4d4d4d;
+}
+
+header h1 {
+	float: left;
+	margin: 0;
+	width: 140px;
+}
+
+header nav {
+	float: right;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+header nav li {
+	list-style: none;
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+header nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #4d4d4d;
+}
+
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
