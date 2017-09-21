@@ -90,8 +90,81 @@ header:after {
 }
 
 
+/*****************/
+/* SERVICES ******/
+/*****************/
+#services {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
 
+#services li {
+	list-style: none;
+	text-align: center;
+	float: left;
+	width: 23%;
+	padding: 1%;
+	line-height: 1.6;
+}
 
+#services h4 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+#services p {
+	margin: 0;
+}
+
+#services i {
+	margin-bottom: 20px;
+}
+
+.icon-light-bg {
+	padding: 20px;
+	background-color: #9e9abf;
+	color: #fdf8fc;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
+
+.icon-clock-bg {
+	padding: 20px;
+	background-color: #d3544e;
+	color: #fdf8fc;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
+
+.icon-flask-bg {
+	padding: 20px;
+	background-color: #67a3c7;
+	color: #fdf8fc;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
+
+.icon-camera-bg {
+	padding: 20px;
+	background-color: #e4c052;
+	color: #fdf8fc;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
+
+#services:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+hr {
+	margin: 0;
+}
 
 
 
