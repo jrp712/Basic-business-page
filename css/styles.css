@@ -1,6 +1,8 @@
 body, ul, li {
 	margin: 0;
 	padding: 0;
+	color: #4d4d4d;
+	background-color: #f7f7f7;
 }
 
 .wrapper {
@@ -10,6 +12,15 @@ body, ul, li {
 	padding: 0 2%;
 }
 
+.padding {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+hr {
+	margin: 0;
+}
+
 
 /***************/
 /* HEADER ******/
@@ -17,7 +28,7 @@ body, ul, li {
 header {
 	padding: 20px 0;
 	background-color: #e5e5e5;
-	color: #4d4d4d;
+	
 }
 
 header h1 {
@@ -47,6 +58,7 @@ header nav a {
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #4d4d4d;
+	background-color: #e5e5e5;
 }
 
 header:after {
@@ -93,11 +105,6 @@ header:after {
 /*****************/
 /* SERVICES ******/
 /*****************/
-#services {
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
 #services li {
 	list-style: none;
 	text-align: center;
@@ -162,16 +169,56 @@ header:after {
   clear: both;
 }
 
-hr {
+
+/**************/
+/* WORKS ******/
+/**************/
+#works li {
+	list-style: none;
+	float: left;
+	width: 32%;
+}
+
+#works > h4 {
+	text-transform: uppercase;
+}
+
+#works li img {
+	width: 100%;
+	height: 270px;
+	margin-bottom: 10px;
+}
+
+#works li:nth-child(2) {
+	margin: 0 2%;
+}
+
+#works h4 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+#works h5 {
+	color: #a3a6ab;
+	margin-top: 0;
+	margin-bottom: 14px;
+}
+
+p {
 	margin: 0;
+	line-height: 1.6;
+}
+
+#works:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
-
-
-
-
-
+/**************/
+/* WORKS ******/
+/**************/
 
 
 
