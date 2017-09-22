@@ -2,7 +2,11 @@ body, ul, li {
 	margin: 0;
 	padding: 0;
 	color: #4d4d4d;
+}
+
+body {
 	background-color: #f7f7f7;
+	font-family: 'Lato', sans-serif;
 }
 
 .wrapper {
@@ -13,12 +17,8 @@ body, ul, li {
 }
 
 .padding {
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-hr {
-	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 
@@ -53,12 +53,18 @@ header nav li {
 	margin-top: 10px;
 }
 
-header nav a {
+header nav a, header h1 a {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #4d4d4d;
 	background-color: #e5e5e5;
+}
+
+header nav a:hover, header h1 a:hover {
+	color: #4bc2a6;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 header:after {
@@ -73,9 +79,19 @@ header:after {
 /***************/
 #banner {
 	text-align: center;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	background-color: #2b343d;
+	position: relative;
+	height: 500px;
+	background: linear-gradient(#3b444b, transparent 90%),
+	            linear-gradient(0deg, #585657, transparent ),
+                #3b444b url(../images/banner.jpg) no-repeat center;
+                background-size: cover;
+}
+
+.group {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #banner h2 {
@@ -99,6 +115,13 @@ header:after {
 	border-radius: 3px;
 	background-color: #3d88bf;
 	color: #efefef;
+}
+
+#banner button:hover {
+	background-color: #a3a6ab;
+	font-weight: bold;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 
@@ -164,15 +187,19 @@ header:after {
 }
 
 #services:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 
 /**************/
 /* WORKS ******/
 /**************/
+#works {
+	border-top: 1px solid #a3a6ab;
+}
+
 #works li {
 	list-style: none;
 	float: left;
@@ -204,21 +231,21 @@ header:after {
 	margin-bottom: 14px;
 }
 
-p {
+#works p {
 	margin: 0;
 	line-height: 1.6;
 }
 
 #works:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 
-/**************/
-/* WORKS ******/
-/**************/
+/****************/
+/* MESSAGE ******/
+/****************/
 #message {
 	background-color: #efefef;
 	text-align: center;
@@ -236,6 +263,48 @@ blockquote {
 }
 
 
+/****************/
+/* FOOTER ******/
+/****************/
+footer {
+	padding: 30px 0;
+	background-color: #1e1e1e;
+}
+
+footer ul {
+	float: left;
+	width: 24%;
+	list-style: none;
+}
+
+footer h4 {
+	font-size: 18px;
+	margin: 0;
+	color: #555;
+	text-transform: uppercase;
+}
+
+footer li {
+	line-height: 1.6;
+	color: #aaa;
+	width: 80%;
+	margin: 14px 0;
+}
+
+footer:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#copyright {
+	clear: both;
+	border-top: 1px solid #a3a6ab;
+	margin-top: 30px;
+	padding-top: 30px;
+	width: 100%;
+	float: left;
+}
 
 
 
