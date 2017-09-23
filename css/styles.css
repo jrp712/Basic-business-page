@@ -28,7 +28,6 @@ body {
 header {
 	padding: 20px 0;
 	background-color: #e5e5e5;
-	
 }
 
 header h1 {
@@ -206,8 +205,10 @@ header:after {
 	width: 32%;
 }
 
-#works > h4 {
+#works .worksHeader {
+	font-size: 18px;
 	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
 #works li img {
@@ -228,7 +229,7 @@ header:after {
 #works h5 {
 	color: #a3a6ab;
 	margin-top: 0;
-	margin-bottom: 14px;
+	margin-bottom: 20px;
 }
 
 #works p {
@@ -307,13 +308,72 @@ footer:after {
 }
 
 
+/**********************/
+/* MEDIA QUERIES ******/
+/**********************/
+@media screen and (max-width: 960px){
+	#banner {
+		height: 300px;
+	}
+	#services li {
+		width: 48%;
+	}
+
+	.padding {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	#works li img {
+		height: 220px;
+	}
+
+	footer ul {
+		width: 43%;
+	}
+
+	footer ul:nth-child(odd) {
+    	clear: both;
+    	margin-left: 80px; 
+	}
+
+	footer ul:nth-child(4) {
+		margin-left: 34.286px;
+	}
+}
 
 
+@media screen and (max-width: 768px){
+	header h1.brand {
+		float: none;
+		margin: 0 auto 15px;
+	}
 
+	header nav {
+		float: none;
+	}
 
+	header nav li {
+		text-align: center;
+		margin-left: 0;
+		width: 16.66%;
+	}
 
+	#works li {
+		float: none;
+		width: 50%;
+		margin: 30px 25% 40px !important;
+	}
 
+	#works .worksHeader {
+		text-align: center;
+	}
 
+	footer ul:nth-child(odd) {
+    	margin-left: 60px; 
+	}
+
+}
 
 
 
